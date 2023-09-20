@@ -18,7 +18,7 @@ export default function Experience() {
       ref={ref}
       className="scroll-mt-28 mb-28 sm:mb-40 text-black"
     >
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>My education & experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -41,7 +41,8 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <h3 className="font-bold capitalize">{item.name}</h3>
+              <p className="font-semibold capitalize">{item.title}</p>
               <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700">
                 {item.description}
